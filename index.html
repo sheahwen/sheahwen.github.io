@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chess</title>
+  </head>
+  <body>
+  <div id=both>
+    <div class="container" id=containerLeft>
+    <div class="board" id="boardLeft">
+      <div class="row" id="row7">
+        <div class="square" id="r7c0">&#9820</div>
+        <div class="square" id="r7c1">&#9822</div>
+        <div class="square" id="r7c2">&#9821</div>
+        <div class="square" id="r7c3">&#9819</div>
+        <div class="square" id="r7c4">&#9818</div>
+        <div class="square" id="r7c5">&#9821</div>
+        <div class="square" id="r7c6">&#9822</div>
+        <div class="square" id="r7c7">&#9820</div>
+      </div>
+      <div class="row" id="row6">
+        <div class="square" id="r6c0">&#9823</div>
+        <div class="square" id="r6c1">&#9823</div>
+        <div class="square" id="r6c2">&#9823</div>
+        <div class="square" id="r6c3">&#9823</div>
+        <div class="square" id="r6c4">&#9823</div>
+        <div class="square" id="r6c5">&#9823</div>
+        <div class="square" id="r6c6">&#9823</div>
+        <div class="square" id="r6c7">&#9823</div>
+      </div>
+      <div class="row" id="row5">
+        <div class="square" id="r5c0" ></div>
+        <div class="square" id="r5c1"></div>
+        <div class="square" id="r5c2"></div>
+        <div class="square" id="r5c3"></div>
+        <div class="square" id="r5c4"></div>
+        <div class="square" id="r5c5"></div>
+        <div class="square" id="r5c6"></div>
+        <div class="square" id="r5c7"></div>
+      </div>
+      <div class="row" id="row4">
+        <div class="square" id="r4c0"></div>
+        <div class="square" id="r4c1"></div>
+        <div class="square" id="r4c2"></div>
+        <div class="square" id="r4c3"></div>
+        <div class="square" id="r4c4"></div>
+        <div class="square" id="r4c5"></div>
+        <div class="square" id="r4c6"></div>
+        <div class="square" id="r4c7"></div>
+      </div>
+      <div class="row" id="row3">
+        <div class="square" id="r3c0"></div>
+        <div class="square" id="r3c1"></div>
+        <div class="square" id="r3c2"></div>
+        <div class="square" id="r3c3"></div>
+        <div class="square" id="r3c4"></div>
+        <div class="square" id="r3c5"></div>
+        <div class="square" id="r3c6"></div>
+        <div class="square" id="r3c7"></div>
+      </div>
+      <div class="row" id="row2">
+        <div class="square" id="r2c0"></div>
+        <div class="square" id="r2c1"></div>
+        <div class="square" id="r2c2"></div>
+        <div class="square" id="r2c3"></div>
+        <div class="square" id="r2c4"></div>
+        <div class="square" id="r2c5"></div>
+        <div class="square" id="r2c6"></div>
+        <div class="square" id="r2c7"></div>
+      </div>
+      <div class="row" id="row1">
+        <div class="square" id="r1c0">&#9817</div>
+        <div class="square" id="r1c1">&#9817</div>
+        <div class="square" id="r1c2">&#9817</div>
+        <div class="square" id="r1c3">&#9817</div>
+        <div class="square" id="r1c4">&#9817</div>
+        <div class="square" id="r1c5">&#9817</div>
+        <div class="square" id="r1c6">&#9817</div>
+        <div class="square" id="r1c7">&#9817</div>
+      </div>
+      <div class="row" id="row0">
+        <div class="square" id="r0c0">&#9814</div>
+        <div class="square" id="r0c1">&#9816</div>
+        <div class="square" id="r0c2">&#9815</div>
+        <div class="square" id="r0c3">&#9813</div>
+        <div class="square" id="r0c4">&#9812</div>
+        <div class="square" id="r0c5">&#9815</div>
+        <div class="square" id="r0c6">&#9816</div>
+        <div class="square" id="r0c7">&#9814</div>
+      </div>
+    </div> 
+    <div class=capturedContainer id = capturedContainerLeft>
+      <div class=timerBox>
+      <div class =timer id = "timerBlackLeft"></div>
+      <div class=capturedBox id=capturedBoxBlackLeft>
+        <h3>Black captured pieces</h3>
+        <!-- <div class=gg id="ggColorBoardId">&#9814</div> -->
+      </div></div>
+      <div class=timerBox>
+        <div class=capturedBox id=capturedBoxWhiteLeft>
+          <h3>White captured pieces</h3>
+          <!-- <div class=gg id="ggColorBoardId">&#9814</div> -->
+        </div>
+        <div class =timer id = "timerWhiteLeft"></div>
+    </div>
+  </div>
+    
+    <div class="log" id="logLeft">
+      <button>Start</button>
+    </div>
+    
+  </div>
+  
+  <div class="container" id=containerRight>
+    
+    <div class=capturedContainer id=capturedContainerRight>
+      <div class=timerBox>
+        <div class =timer id = "timerBlackRight"></div>  
+      <div class=capturedBox id=capturedBoxBlackRight>
+        <h3>Black captured pieces</h3>
+        <!-- <div class=gg id="ggColorBoardId">&#9814</div> -->
+      </div></div>
+      <div class=timerBox>
+      <div class=capturedBox id=capturedBoxWhiteRight>
+        <h3>White captured pieces</h3>
+        <!-- <div class=gg id="ggColorBoardId">&#9814</div> -->
+      </div>
+      <div class =timer id = "timerWhiteRight"></div>  
+    </div>
+  </div>
+
+
+    <div class = "board" id="boardRight">
+      <div class="row" id="ROW7">
+        <div class="square" id="R7C0">&#9820</div>
+        <div class="square" id="R7C1">&#9822</div>
+        <div class="square" id="R7C2">&#9821</div>
+        <div class="square" id="R7C3">&#9819</div>
+        <div class="square" id="R7C4">&#9818</div>
+        <div class="square" id="R7C5">&#9821</div>
+        <div class="square" id="R7C6">&#9822</div>
+        <div class="square" id="R7C7">&#9820</div>
+      </div>
+      <div class="row" id="ROW6">
+        <div class="square" id="R6C0">&#9823</div>
+        <div class="square" id="R6C1">&#9823</div>
+        <div class="square" id="R6C2">&#9823</div>
+        <div class="square" id="R6C3">&#9823</div>
+        <div class="square" id="R6C4">&#9823</div>
+        <div class="square" id="R6C5">&#9823</div>
+        <div class="square" id="R6C6">&#9823</div>
+        <div class="square" id="R6C7">&#9823</div>
+      </div>
+      <div class="row" id="ROW5">
+        <div class="square" id="R5C0" ></div>
+        <div class="square" id="R5C1"></div>
+        <div class="square" id="R5C2"></div>
+        <div class="square" id="R5C3"></div>
+        <div class="square" id="R5C4"></div>
+        <div class="square" id="R5C5"></div>
+        <div class="square" id="R5C6"></div>
+        <div class="square" id="R5C7"></div>
+      </div>
+      <div class="row" id="ROW4">
+        <div class="square" id="R4C0"></div>
+        <div class="square" id="R4C1"></div>
+        <div class="square" id="R4C2"></div>
+        <div class="square" id="R4C3"></div>
+        <div class="square" id="R4C4"></div>
+        <div class="square" id="R4C5"></div>
+        <div class="square" id="R4C6"></div>
+        <div class="square" id="R4C7"></div>
+      </div>
+      <div class="row" id="ROW3">
+        <div class="square" id="R3C0"></div>
+        <div class="square" id="R3C1"></div>
+        <div class="square" id="R3C2"></div>
+        <div class="square" id="R3C3"></div>
+        <div class="square" id="R3C4"></div>
+        <div class="square" id="R3C5"></div>
+        <div class="square" id="R3C6"></div>
+        <div class="square" id="R3C7"></div>
+      </div>
+      <div class="row" id="ROW2">
+        <div class="square" id="R2C0"></div>
+        <div class="square" id="R2C1"></div>
+        <div class="square" id="R2C2"></div>
+        <div class="square" id="R2C3"></div>
+        <div class="square" id="R2C4"></div>
+        <div class="square" id="R2C5"></div>
+        <div class="square" id="R2C6"></div>
+        <div class="square" id="R2C7"></div>
+      </div>
+      <div class="row" id="ROW1">
+        <div class="square" id="R1C0">&#9817</div>
+        <div class="square" id="R1C1">&#9817</div>
+        <div class="square" id="R1C2">&#9817</div>
+        <div class="square" id="R1C3">&#9817</div>
+        <div class="square" id="R1C4">&#9817</div>
+        <div class="square" id="R1C5">&#9817</div>
+        <div class="square" id="R1C6">&#9817</div>
+        <div class="square" id="R1C7">&#9817</div>
+      </div>
+      <div class="row" id="ROW0">
+        <div class="square" id="R0C0">&#9814</div>
+        <div class="square" id="R0C1">&#9816</div>
+        <div class="square" id="R0C2">&#9815</div>
+        <div class="square" id="R0C3">&#9813</div>
+        <div class="square" id="R0C4">&#9812</div>
+        <div class="square" id="R0C5">&#9815</div>
+        <div class="square" id="R0C6">&#9816</div>
+        <div class="square" id="R0C7">&#9814</div>
+      </div>
+    </div> 
+
+    <div class= "log" id="logRight">
+    </div>
+
+  </div>
+</div>
+    <script src="bughouse.js" charset="utf-8"></script>
+  </body>
+</html>
